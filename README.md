@@ -2,7 +2,7 @@
 	
 	If number of requests are more than the thread pool available than those requests have to wait until any of the threads is free. (Thread per request concept).
 
-![images/REST.png](images/REST.png)
+![](images/REST.png)
 
 
 
