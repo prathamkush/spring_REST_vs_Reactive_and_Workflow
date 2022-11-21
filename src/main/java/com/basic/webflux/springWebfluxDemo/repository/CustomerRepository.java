@@ -35,4 +35,15 @@ public class CustomerRepository {
                 .map(i -> new Customer(i, "Customer "+i));
     }
 
+    public Flux<Customer> getCustomerList(){
+        return Flux.range(1,50)
+                .doOnNext(i -> System.out.println("processing count in stream flow : "+i))
+                .map(i -> new Customer(i, "Customer "+i));
+    }
+
+
+
+
+
+
 }
